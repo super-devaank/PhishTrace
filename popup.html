@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhishTrace V5</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <h1>🛡️ PhishTrace</h1>
+      <span class="version">VERSION 5.0</span>
+      <p>Advanced URL Security Scanner</p>
+    </header>
+
+    <section class="scanner">
+      <label for="url">Website URL</label>
+      <div id="url">Waiting for current page...</div>
+      <button id="analyze">SCAN WEBSITE</button>
+    </section>
+
+    <section class="result">
+      <div class="result-heading">
+        <h2>Security Analysis</h2>
+        <span id="status">NOT SCANNED</span>
+      </div>
+
+      <div class="score-section">
+        <div id="riskScore">--<small>/100</small></div>
+        <div>
+          <h3 id="riskLevel">Waiting for scan</h3>
+          <p>Estimated risk score</p>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <div id="riskBar"></div>
+      </div>
+
+      <h3 class="findings-title">Detection Details</h3>
+      <ul id="findings">
+        <li>Click Scan Website to begin.</li>
+      </ul>
+    </section>
+
+    <footer>
+      PhishTrace V5 · Local heuristic analysis
+      <p>Results are estimates, not a guarantee of website safety.</p>
+    </footer>
+
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

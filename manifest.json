@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "PhishTrace V5",
+  "version": "5.0",
+  "description": "Advanced local phishing URL analyzer",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
